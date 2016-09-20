@@ -1,0 +1,92 @@
+.box-shadow(@h,@v,@blur,@spread,@color){
+  -webkit-box-shadow:  @h @v @blur @spread @color;
+  -moz-box-shadow:  @h @v @blur @spread @color;
+  box-shadow:  @h @v @blur @spread @color;
+}
+
+.transition(@what,@time,@effect){
+  -webkit-transition: @what @time @effect;
+  -moz-transition: @what @time @effect;
+  -ms-transition: @what @time @effect;
+  -o-transition: @what @time @effect;
+  transition: @what @time @effect;
+}
+
+.translate3d(@x,@y,@z){
+  -webkit-transform: translate3d(@x,@y,@z);
+  -moz-transform: translate3d(@x,@y,@z);
+  -ms-transform: translate3d(@x,@y,@z);
+  -o-transform: translate3d(@x,@y,@z);
+  transform: translate3d(@x,@y,@z);
+}
+
+.rotate3d(@x,@y,@z){
+  -webkit-transform: rotateX(@x) rotateY(@y) rotateZ(@z) ;
+  -moz-transform: rotateX(@x) rotateY(@y) rotateZ(@z) ;
+  -ms-transform: rotateX(@x) rotateY(@y) rotateZ(@z) ;
+  -o-transform: rotateX(@x) rotateY(@y) rotateZ(@z) ;
+  transform: rotateX(@x) rotateY(@y) rotateZ(@z) ;
+}
+
+.rotate(@deg){
+  -webkit-transform: rotate(@deg)  ;
+  -moz-transform: rotate(@deg)  ;
+  -ms-transform: rotate(@deg)  ;
+  -o-transform: rotate(@deg)  ;
+  transform: rotate(@deg) ;
+}
+
+.border-radius(@v){
+  -webkit-border-radius:@v;
+  -moz-border-radius:@v;
+  border-radius:@v;
+}
+
+.box-sizing(){
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.text-ellipsis(){
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-ellipsis-line(@line){
+  overflow : hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: @line;
+-webkit-box-orient: vertical;
+
+}
+
+.appnone(){
+  appearance:none;
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari 和 Chrome */
+}
+
+
+@main: #ff8400;
+@red: #E31839;
+@bg:  #f8f7f3;
+@fontDark: #080808;
+@fontDark2:#313131;
+@fontGray: #b2b2b2;
+@fontLight:rgba(7, 7, 7, 0.3);
+@borderGray: #ededed;
+@bgGray: #efefef;
+@bgLight: #f9f9f9;
+@line: #eee;
+@gray-font: #999;
+@pink:#ff8687;
+
+// 预定义的通用尺寸
+@topbar-height: 3.14rem;
+@footer-height: 3.57rem;
+//微信运营页的底部入口
+@wxfooter-height:3rem;
+// @font-size:28px;

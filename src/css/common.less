@@ -1,0 +1,58 @@
+.box-shadow(@h,@v,@blur,@spread,@color){
+  -webkit-box-shadow:  @h @v @blur @spread @color;
+  -moz-box-shadow:  @h @v @blur @spread @color;
+  box-shadow:  @h @v @blur @spread @color;
+}
+
+.transition(@what,@time,@effect){
+  -webkit-transition: @what @time @effect;
+  -moz-transition: @what @time @effect;
+  -ms-transition: @what @time @effect;
+  -o-transition: @what @time @effect;
+  transition: @what @time @effect;
+}
+
+.translate3d(@x,@y,@z){
+  -webkit-transform: translate3d(@x,@y,@z);
+  -moz-transform: translate3d(@x,@y,@z);
+  -ms-transform: translate3d(@x,@y,@z);
+  -o-transform: translate3d(@x,@y,@z);
+  transform: translate3d(@x,@y,@z);
+}
+
+.rotate(@x,@y,@z){
+  -webkit-transform: rotateX(@x) rotateY(@y) rotateZ(@z) ;
+  -moz-transform: rotateX(@x) rotateY(@y) rotateZ(@z) ;
+  -ms-transform: rotateX(@x) rotateY(@y) rotateZ(@z) ;
+  -o-transform: rotateX(@x) rotateY(@y) rotateZ(@z) ;
+  transform: rotateX(@x) rotateY(@y) rotateZ(@z) ;
+}
+
+.border-radius(@v){
+  -webkit-border-radius:@v;
+  -moz-border-radius:@v;
+  border-radius:@v;
+}
+
+.box-sizing(){
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.text-ellipsis(){
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+@main: rgb(241,80,0);
+@red: #e85454;
+@green: #0bb59b;
+@fontBlack: #333;
+@darkblue: #478196;
+@bg:  #f8f8f8;
+@line: #ddd;
+@darkgrey: #666;
+
