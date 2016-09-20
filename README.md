@@ -184,7 +184,8 @@ Vue.popup.show({
 ### 回调this指针
 每个按钮回调都可以调用回调返回的方法，如下实例
 
-···
+```
+
 Vue.popup.confirm({
 	okCb: function(){
 		// 禁用默认行为
@@ -193,7 +194,7 @@ Vue.popup.confirm({
 	}
 });
 
-···
+```
 
 回调里的this相当于Vue.popup对象,所以也可以用Vue.popup.stop()
 
