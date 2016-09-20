@@ -178,8 +178,12 @@ Vue.popup.show({
 ###Vue.popup.stop()
 无参数，通常放在按钮回调里以阻止按钮默认关闭的动作。
 
+###Vue.popup.close()
+无参数，手动关闭所有浮层。
+
 ### 回调this指针
 每个按钮回调都可以调用回调返回的方法，如下实例
+
 ···
 Vue.popup.confirm({
 	okCb: function(){
